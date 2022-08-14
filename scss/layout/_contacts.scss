@@ -1,0 +1,39 @@
+.contacts {
+  @extend %reset-list;
+  display: flex;
+
+}
+
+.contacts__item {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-property: color;
+
+  transition-duration: 250ms;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.contacts__mail,
+.contacts__phone-number {
+  @extend %reset-link;
+  font-weight: 500;
+  color: var(--header-phone-number);
+  display: flex;
+  align-items: center;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

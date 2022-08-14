@@ -1,0 +1,40 @@
+.profession {
+    padding-top: 0;
+    @extend %section;
+}
+
+.profession__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 35);
+    text-align: center;
+    color: var(--main-txt-cl);
+    margin-bottom: 50px;
+}
+
+
+.profession__list {
+    @extend %reset-list;
+    display: flex;
+    gap: 30px;
+}
+
+.profession__item {
+    flex-basis: calc((100% - 30px * 2) / 3);
+    position: relative;
+}
+
+.profession__name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--hero-txt-cl);
+    background-color: var(--prrofession-bg-cl);
+}

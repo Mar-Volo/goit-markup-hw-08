@@ -1,0 +1,119 @@
+.portfolio {
+  @extend %section;
+}
+
+.portfolio__list {
+  @extend %reset-list;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.portfolio__btn {
+  background-color: var(--portfolio-buttons-bg-cl);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  transition-property: color, background-color, box-shadow;
+
+  transition-duration: 250ms;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--hero-txt-cl);
+    background-color: var(--accent-txt-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.products__list {
+  @extend %reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+
+.products__item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.products__photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.products__overlay {
+  background-color: var(--overlay-bg-cl);
+  position: absolute;
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms ease-in-out;
+}
+
+.products__text {
+  color: var(--hero-txt-cl);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+}
+
+.products__link {
+  @extend %reset-link;
+  display: block;
+
+  transition-property: box-shadow;
+
+  transition-duration: 250ms;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .products__overlay,
+  &:focus .products__overlay {
+    transform: translateY(0);
+  }
+}
+
+.portfolio-name {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  &__header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-txt-cl);
+    margin-bottom: 4px;
+  }
+  &__category {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: var(--main-txt-item-cl);
+  }
+}

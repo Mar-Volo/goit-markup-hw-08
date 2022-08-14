@@ -1,0 +1,23 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__conteiner {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__logo {
+    @extend %reset-link;
+    color: var(--accent-txt-cl);
+    margin-right: 93px;
+    
+    &--style {
+            color: var(--logo-style-cl);
+        }
+  }
+
+}
+
+
