@@ -1,11 +1,13 @@
 
 .benefits {
   @extend %section;
+  padding: 60px 0;
 }
 
 .benefits__list {
   @extend %reset-list;
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -17,6 +19,7 @@
   &:last-child {
     margin-right: 0;
   }
+
 }
 
 .benefits__block {
@@ -35,8 +38,9 @@
   text-transform: uppercase;
   color: var(--main-txt-cl);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .benefits__discription {
-  width: 270px;
+  width: 450px;
 }

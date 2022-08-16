@@ -75,17 +75,25 @@
             </a>
           </li>
         </ul>
+        <button
+          type="button"
+          class="mobile-menu mobile-menu--open"
+          data-menu-open
+        >
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#mobile-menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
     <!--основной контент-->
 
-    <main>
+   <main>
       <section class="hero">
-        <div class="conteiner">
-          <!--Кнопка-->
+     <div class="conteiner"> 
+    <!--Кнопка-->
 
-          <h1 lang="ru" class="hero__discription">
+    <h1 lang="ru" class="hero__discription">
             Эффективные решения для вашего бизнеса
           </h1>
 
@@ -95,7 +103,7 @@
         </div>
       </section>
 
-      <section class="benefits">
+     <section class="benefits">
         <div class="conteiner">
           <h2 lang="ru" class="visually-hidden">
             Преимущества и достоинства компании
@@ -155,11 +163,13 @@
         </div>
       </section>
 
-      <section class="profession">
-        <div class="conteiner">
-          <!--Род деятельности-->
+    <!--  <section class="profession">
+        <div class="conteiner"> -->
+          
 
-          <h2 lang="ru" class="profession__header">Чем мы занимаемся</h2>
+    <!--Род деятельности-->
+
+    <!--  <h2 lang="ru" class="profession__header">Чем мы занимаемся</h2>
 
           <ul class="profession__list">
             <li class="profession__item">
@@ -179,10 +189,11 @@
       </section>
 
       <section class="team">
-        <div class="conteiner">
-          <!--Коллектив-->
+        <div class="conteiner"> -->
 
-          <h2 lang="ru" class="team__header">Наша команда</h2>
+    <!--Коллектив-->
+
+    <!--  <h2 lang="ru" class="team__header">Наша команда</h2>
 
           <ul class="team__list">
             <li class="team__item">
@@ -451,11 +462,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--Секция клиентов-->
+    <!--Секция клиентов-->
 
-      <section class="clients">
+    <!-- <section class="clients">
         <div class="conteiner">
           <h2 lang="ru" class="clients__header">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -540,10 +551,11 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
+
     <!--Подвал сайта-->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="conteiner footer__conteiner">
         <div class="footer__address">
           <a href="./index.html" class="logo footer__logo"
@@ -659,8 +671,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
     <!-- Modal Window-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" data-modal-close>
@@ -750,6 +764,76 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js/modal-script"></script>
+    <!-- mobile-menu -->
+    <div class="menu" data-menu>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a
+            href="./index.html"
+            lang="ru"
+            class="menu__link menu__link--current"
+          >
+            Студия
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html" lang="ru" class="menu__link">
+            Портфолио
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" lang="ru" class="menu__link"> Контакты </a>
+        </li>
+      </ul>
+      <ul class="menu-contacts">
+        <li class="menu-contacts__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="menu-contacts__mail menu-contacts__link"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="menu-contacts__item">
+          <a
+            href="tel:+380961111111"
+            class="menu-contacts__phone-number menu-contacts__link"
+          >
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <ul class="social-links">
+        <li class="socila-links__item">
+          <a href="#" class="socila-links__link socila-links__link--style"
+            >Instagram</a
+          >
+        </li>
+        <li class="socila-links__item">
+          <a href="#" class="socila-links__link socila-links__link--style"
+            >Twitter</a
+          >
+        </li>
+        <li class="socila-links__item">
+          <a href="#" class="socila-links__link socila-links__link--style"
+            >Facebook</a
+          >
+        </li>
+        <li class="socila-links__item">
+          <a href="#" class="socila-links__link">Linkedln</a>
+        </li>
+      </ul>
+      <button
+        type="button"
+        class="menu-button menu-button--close"
+        data-menu-close
+      >
+        <svg class="menu-button__icon" width="40" height="40">
+          <use href="./images/icons.svg#mobile-menu-close"></use>
+        </svg>
+      </button>
+    </div>
+    <script src="./js/modal.js/modal-script.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
