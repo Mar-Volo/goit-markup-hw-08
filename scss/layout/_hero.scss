@@ -1,14 +1,16 @@
 .hero {
-  /* @extend %section;*/
+  @extend %section;
   background-color: var(--Dark-bg-cl-1);
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  /* padding: 200px 0;*/
   padding: 118px 0;
-  /*max-width: 1600px;*/
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+
+    max-width: 1600px;
+  }
   margin: 0 auto;
   background-image: linear-gradient(
       to right,
@@ -67,11 +69,6 @@
 }
 
 .hero__discription {
-  /*
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  width: 696px;
-  */
   font-weight: 900;
   font-size: 26px;
   line-height: calc(42 / 26);
@@ -81,10 +78,15 @@
   color: var(--hero-txt-cl);
   width: 360px;
   margin-bottom: 30px;
-    @media screen and (max-width: 479px) {
-            font-size: 20px;
-            width: 280px;
-        }
+  @media screen and (max-width: 479px) {
+    font-size: 20px;
+    width: 280px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    width: 696px;
+  }
 }
 
 .hero__button {

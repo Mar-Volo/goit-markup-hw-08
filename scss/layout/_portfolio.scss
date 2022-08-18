@@ -1,13 +1,26 @@
 .portfolio {
   @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__list {
   @extend %reset-list;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
   gap: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__btn {
@@ -47,7 +60,13 @@
 }
 
 .products__item {
-  flex-basis: calc((100% - 30px * 2) / 3);
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
 }
 
 .products__photo {
@@ -78,8 +97,8 @@
 
 .products__link {
   @extend %reset-link;
-  display: block;
-
+  display: flex;
+  flex-direction: column;
   transition-property: box-shadow;
 
   transition-duration: 250ms;
@@ -95,9 +114,12 @@
   &:focus .products__overlay {
     transform: translateY(0);
   }
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio-name {
+  flex-grow: 1;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
