@@ -852,13 +852,13 @@ address {
       from(rgba(47, 48, 58, 0.4)),
       to(rgba(47, 48, 58, 0.4))
     ),
-    url("../images/bcg-Img/img@1x_sm.jpg");
+    url("../images/bcg-img/img@1x_sm.jpg");
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/bcg-Img/img@1x_sm.jpg");
+    url("../images/bcg-img/img@1x_sm.jpg");
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -877,13 +877,13 @@ address {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url("../images/bcg-Img/img@2x_sm.jpg");
+      url("../images/bcg-img/img@2x_sm.jpg");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bcg-Img/img@2x_sm.jpg");
+      url("../images/bcg-img/img@2x_sm.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -895,13 +895,13 @@ address {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url("../images/bcg-Img/img@1x_md.jpg");
+      url("../images/bcg-img/img@1x_md.jpg");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bcg-Img/img@1x_md.jpg");
+      url("../images/bcg-img/img@1x_md.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -915,13 +915,13 @@ address {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url("../images/bcg-Img/img@2x_md.jpg");
+      url("../images/bcg-img/img@2x_md.jpg");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bcg-Img/img@2x_md.jpg");
+      url("../images/bcg-img/img@2x_md.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -933,13 +933,13 @@ address {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url("../images/bcg-Img/img@1x_lg.jpg");
+      url("../images/bcg-img/img@1x_lg.jpg");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bcg-Img/img@1x_lg.jpg");
+      url("../images/bcg-img/img@1x_lg.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -953,13 +953,13 @@ address {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url("../images/bcg-Img/img@2x_lg.jpg");
+      url("../images/bcg-img/img@2x_lg.jpg");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bcg-Img/img@2x_lg.jpg");
+      url("../images/bcg-img/img@2x_lg.jpg");
   }
 }
 .hero__discription {
