@@ -38,6 +38,7 @@
 .clients,
 .team,
 .profession,
+.benefits,
 .hero {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1028,6 +1029,11 @@ address {
 .benefits {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+  }
+}
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,6 +1117,12 @@ address {
     display: none;
   }
 }
+@media screen and (max-width: 1200px) {
+  .profession {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .profession__header {
   font-weight: 700;
   font-size: 36px;
@@ -1154,6 +1166,12 @@ address {
   background-color: var(--portfolio-buttons-bg-cl);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__header {
   margin-bottom: 50px;
@@ -1266,6 +1284,7 @@ address {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding-bottom: 94px;
   }
 }
 .clients__header {
